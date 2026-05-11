@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pawffles — Política de privacidad</title>
+  <style>
+    :root {
+      --bg: #FDF6EE;
+      --surface: #FFF8F0;
+      --text: #5C3317;
+      --accent: #C97B3A;
+      --border: #F2A65A;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    .lang {
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .lang a { color: var(--accent); }
+    h1 {
+      font-size: 28px;
+      letter-spacing: -0.5px;
+      margin: 0 0 4px;
+    }
+    .meta {
+      font-size: 13px;
+      opacity: 0.65;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 36px 0 8px;
+      color: var(--accent);
+    }
+    p, li { font-size: 16px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    .summary {
+      background: var(--surface);
+      border-left: 3px solid var(--border);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 12px 0 24px;
+    }
+    code {
+      background: var(--surface);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 13px;
+      opacity: 0.65;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="lang">Español · <a href="privacy-en.html">English</a></div>
+
+    <h1>Política de privacidad</h1>
+    <p class="meta">Vigente desde: 11 de mayo de 2026 · Pawffles</p>
+
+    <div class="summary">
+      <strong>Versión corta:</strong> Pawffles es un juego de memoria con un ranking semanal. No te pedimos email, teléfono, nombre real ni ubicación. Compartimos lo mínimo: tu apodo y tu puntaje semanal para el ranking, un identificador publicitario anónimo del dispositivo para los avisos que muestra Google AdMob, y eventos anónimos de uso (qué pantallas tocás) para mejorar la app. Podés borrar tus datos desde la app cuando quieras.
+    </div>
+
+    <h2>1. Quiénes somos</h2>
+    <p>Pawffles es un juego móvil independiente desarrollado por Mathías López. Para contactarnos: <a href="mailto:mathiaslopez.tech@gmail.com">mathiaslopez.tech@gmail.com</a>.</p>
+
+    <h2>2. Qué datos recolectamos</h2>
+    <ul>
+      <li><strong>Un identificador anónimo de usuario</strong> — un ID aleatorio generado por nuestro backend (Supabase). No puede vincularse con vos personalmente.</li>
+      <li><strong>El apodo que elegís</strong> — se muestra en el ranking semanal. Podés poner el que quieras; te pedimos que no uses tu nombre real, email o teléfono.</li>
+      <li><strong>Tu puntaje semanal</strong> — el total de puntos que sumaste en los desafíos diarios de la semana en curso, usado para calcular tu posición en el ranking.</li>
+      <li><strong>Identificador publicitario (Google Advertising ID)</strong> — un ID anónimo del dispositivo que Google AdMob usa para mostrar publicidad y prevenir fraude. Podés resetearlo o limitarlo desde Android (Ajustes → Google → Anuncios).</li>
+      <li><strong>Eventos anónimos de uso</strong> — qué pantallas abrís y qué botones tocás dentro de la app. Los procesa PostHog para que entendamos cómo se usa Pawffles y decidamos qué mejorar. Estos eventos quedan asociados a un identificador anónimo separado del usado para el ranking.</li>
+    </ul>
+
+    <h2>3. Qué NO recolectamos</h2>
+    <ul>
+      <li>Ni email, ni teléfono, ni nombre real, ni lista de contactos.</li>
+      <li>Ni ubicación, ni GPS, ni geolocalización por IP.</li>
+      <li>Ni micrófono, ni cámara, ni fotos, ni archivos.</li>
+      <li>Ni datos sensibles (salud, orientación, religión, etc.).</li>
+      <li>Ni vendemos tus datos a brokers o terceros.</li>
+    </ul>
+
+    <h2>4. Datos que se quedan en tu dispositivo</h2>
+    <p>Tu progreso de niveles, estrellas, boosters, mejores puntajes diarios y ajustes de audio se guardan localmente en tu teléfono usando el almacenamiento estándar de Android. Nunca salen del dispositivo, salvo que reinstales o transfieras la app.</p>
+
+    <h2>5. Para qué usamos tus datos</h2>
+    <ul>
+      <li>El identificador anónimo, el apodo y el puntaje semanal se usan para mostrar el ranking semanal dentro de la app.</li>
+      <li>El identificador publicitario lo usa Google AdMob para mostrarte publicidad dentro de la app y prevenir fraude/abuso.</li>
+      <li>Los eventos anónimos de uso los usamos vía PostHog para entender qué partes de la app se usan más y decidir qué mejorar o quitar.</li>
+    </ul>
+    <p>No vendemos tus datos. No los compartimos con brokers ni con terceros fuera de los sub-procesadores descritos en la siguiente sección.</p>
+
+    <h2>6. Quién procesa tus datos</h2>
+    <p>Trabajamos con los siguientes sub-procesadores:</p>
+    <ul>
+      <li><strong>Supabase</strong> — backend para el ranking semanal y la sesión anónima. Política: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.</li>
+      <li><strong>Google AdMob</strong> — red de publicidad dentro de la app. Política: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+      <li><strong>PostHog (PostHog Cloud EU)</strong> — analytics anónimo de uso, alojado en la Unión Europea. Política: <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a>.</li>
+    </ul>
+
+    <h2>7. Por cuánto tiempo guardamos tus datos</h2>
+    <p>Las filas de puntajes semanales se conservan indefinidamente para que los rankings históricos se mantengan consistentes. Podés borrar tus datos cuando quieras (ver siguiente sección).</p>
+
+    <h2>8. Cómo borrar tus datos</h2>
+    <p>Abrí la app, tocá el <strong>ícono de engranaje</strong> en la pantalla de selección de niveles y luego <strong>"Eliminar mis datos"</strong>. Esto hace lo siguiente:</p>
+    <ul>
+      <li>Borra tu progreso local, apodo y estado del juego.</li>
+      <li>Borra tus filas del ranking en nuestro backend.</li>
+      <li>Borra la reserva del apodo.</li>
+      <li>Cierra tu sesión y crea una sesión anónima nueva.</li>
+    </ul>
+    <p>Si por algún motivo el flujo desde la app no funciona, escribinos a <a href="mailto:mathiaslopez.tech@gmail.com">mathiaslopez.tech@gmail.com</a> y borramos tus datos manualmente.</p>
+
+    <h2>9. Edad mínima y privacidad de menores</h2>
+    <p>Pawffles está dirigido a usuarios de <strong>13 años o más</strong>. No está pensado para ni dirigido a menores de 13 años, y no recolectamos a sabiendas información personal de menores de esa edad. Si sos madre, padre o tutor y creés que un menor de 13 está usando la app o ingresó información personal a través de un apodo, contactanos a <a href="mailto:mathiaslopez.tech@gmail.com">mathiaslopez.tech@gmail.com</a> y eliminaremos esa información rápidamente.</p>
+
+    <h2>10. Seguridad</h2>
+    <p>Los datos enviados entre la app y nuestro backend usan cifrado HTTPS. Supabase aplica row-level security, así que cada usuario solo puede modificar sus propias filas. Ningún sistema es perfectamente seguro, pero los datos que guardamos son mínimos y no identifican personalmente a nadie por sí solos.</p>
+
+    <h2>11. Tus derechos</h2>
+    <p>Podés pedir acceso a tus datos o solicitar su eliminación en cualquier momento. La forma más rápida es el flujo de borrado dentro de la app; también podés escribirnos por mail. Según tu jurisdicción (por ejemplo GDPR en la UE, LGPD en Brasil), podés tener derechos adicionales — contactanos para ejercerlos.</p>
+
+    <h2>12. Cambios a esta política</h2>
+    <p>Si hacemos cambios importantes, actualizamos la fecha de vigencia al inicio y, si corresponde, te avisamos dentro de la app. Continuar usando la app después de los cambios implica aceptación.</p>
+
+    <h2>13. Contacto</h2>
+    <p>Preguntas, pedidos o reclamos: <a href="mailto:mathiaslopez.tech@gmail.com">mathiaslopez.tech@gmail.com</a>.</p>
+
+    <footer>© 2026 Mathías López · Pawffles</footer>
+  </main>
+</body>
+</html>
