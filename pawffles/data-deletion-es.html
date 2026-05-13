@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pawffles — Eliminación de datos</title>
+  <style>
+    :root {
+      --bg: #FDF6EE;
+      --surface: #FFF8F0;
+      --text: #5C3317;
+      --accent: #C97B3A;
+      --border: #F2A65A;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    .lang {
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .lang a { color: var(--accent); }
+    h1 {
+      font-size: 28px;
+      letter-spacing: -0.5px;
+      margin: 0 0 4px;
+    }
+    .meta {
+      font-size: 13px;
+      opacity: 0.65;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 36px 0 8px;
+      color: var(--accent);
+    }
+    p, li { font-size: 16px; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    .summary {
+      background: var(--surface);
+      border-left: 3px solid var(--border);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 12px 0 24px;
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 13px;
+      opacity: 0.65;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="lang"><a href="data-deletion-en.html">English</a> · Español</div>
+
+    <h1>Eliminación de datos</h1>
+    <p class="meta">Vigente desde: 12 de mayo de 2026 · Pawffles · Morsa Software</p>
+
+    <div class="summary">
+      <strong>Resumen:</strong> Podés eliminar todos tus datos de Pawffles directamente desde la app en cualquier momento. Si no tenés acceso a la app, escribinos a <a href="mailto:morsasoftware@gmail.com">morsasoftware@gmail.com</a> y lo hacemos por vos.
+    </div>
+
+    <h2>1. Cómo eliminar tus datos desde la app</h2>
+    <ol>
+      <li>Abrí Pawffles.</li>
+      <li>Tocá el <strong>ícono de engranaje</strong> en la esquina superior derecha de la pantalla de selección de niveles.</li>
+      <li>Tocá <strong>"Eliminar mis datos"</strong>.</li>
+      <li>Confirmá en el diálogo que aparece.</li>
+    </ol>
+    <p>La eliminación es inmediata. La app crea automáticamente una sesión anónima nueva para que puedas seguir jugando si querés.</p>
+
+    <h2>2. Cómo eliminar tus datos sin acceso a la app</h2>
+    <p>Si desinstalaste la app, perdiste tu dispositivo, o por cualquier motivo no podés usar el flujo dentro de la app, escribinos a <a href="mailto:morsasoftware@gmail.com">morsasoftware@gmail.com</a> con el asunto <strong>"Eliminar mis datos — Pawffles"</strong>.</p>
+    <p>Necesitamos saber tu <strong>nickname</strong> tal cual aparece en el ranking semanal para localizar tu fila. Procesamos las solicitudes dentro de los <strong>30 días</strong> de recibido el mail.</p>
+
+    <h2>3. Qué datos se eliminan</h2>
+    <ul>
+      <li>Tu progreso local (niveles desbloqueados, mejores puntajes, estrellas, mejores puntajes diarios).</li>
+      <li>Tu apodo guardado localmente y en nuestra base de datos.</li>
+      <li>Tus filas en el ranking semanal (tabla <code>weekly_scores</code>).</li>
+      <li>La reserva de tu apodo (tabla <code>user_nicknames</code>).</li>
+      <li>Tu sesión anónima de autenticación.</li>
+    </ul>
+
+    <h2>4. Qué datos se conservan</h2>
+    <p>Conservamos una fila <strong>anónima de autenticación</strong> sin información personal (sin email, sin teléfono, sin nombre real). Esa fila contiene únicamente un identificador interno aleatorio sin posibilidad de vincularte con vos como persona, y existe sólo por razones técnicas del proveedor de autenticación (Supabase).</p>
+    <p>Los eventos de uso anónimos en PostHog (qué pantallas tocaste) se asocian a un identificador separado y se conservan según las políticas de retención de PostHog (12 meses por defecto en la free tier).</p>
+
+    <h2>5. Aplicaciones</h2>
+    <p>Esta política aplica a <strong>Pawffles</strong> (paquete Android: <code>com.morsasoftware.pawffles</code>), publicada por Morsa Software.</p>
+
+    <h2>6. Contacto</h2>
+    <p>Preguntas o solicitudes manuales: <a href="mailto:morsasoftware@gmail.com">morsasoftware@gmail.com</a>.</p>
+
+    <p>Ver también la <a href="privacy-es.html">política de privacidad completa</a>.</p>
+
+    <footer>© 2026 Morsa Software · Pawffles</footer>
+  </main>
+</body>
+</html>
